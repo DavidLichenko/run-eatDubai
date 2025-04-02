@@ -32,7 +32,7 @@ export default function Hero() {
     return (
         <>
             {loading &&
-                <div className="flex items-center justify-center absolute z-[9999] h-dvh w-full overflow-hidden bg-background">
+                <div className="flex items-center justify-center top-0 bottom-0 left-0 right-0 sticky z-[9999] h-dvh w-full overflow-hidden bg-background">
                     {/* https://uiverse.io/G4b413l/tidy-walrus-92 */}
                     <div className="three-body">
                         <div className="three-body__dot"></div>
