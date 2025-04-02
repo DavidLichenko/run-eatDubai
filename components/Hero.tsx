@@ -43,7 +43,7 @@ export default function Hero() {
                             <img className={'-right-6 relative -top-3'} src="logo2.png" alt="logo"
                                  width="90" height="80"/>
                             <div className={'h-full border-r-2 border-secondary_text'}></div>
-                            <h3 className="text-xl pl-4 leading-6 text-left border-l-2 border-secondary_text uppercase text-secondary_text">Gastronomic <br/> Race</h3>
+                            <h3 className="text-xl pl-4 leading-6 text-left border-l-2 border-cyan-700 uppercase text-secondary_text">Gastronomic <br/> Race</h3>
                         </div>
                     </motion.div>
                     <motion.div
@@ -111,7 +111,7 @@ export default function Hero() {
 
                         </motion.div>
                     </h1>
-                    <h2 className="text-3xl absolute text-start sm:text-end text-secondary_text bottom-52 z-20 right-12 sm:right-60 w-[18rem] sm:w-[32rem] sm:text-5xl ">
+                    <h2 className="text-3xl absolute text-start sm:text-end text-secondary_text bottom-24 z-20 right-12 sm:right-60 w-[18rem] sm:w-[32rem] sm:text-5xl ">
                         <motion.div initial={{opacity: 0.3, x: 50}} animate={{x: 0, opacity: 1}}
                                     transition={{duration: 0.4, delay: 0.1, ease: "circIn"}}
                                     className={'text-start sm:text-end'}>
@@ -126,9 +126,9 @@ export default function Hero() {
 
 
                 </section>
-                <h2 className="text-5xl absolute text-background text-end -z-10 bottom-32 right-32 w-[32rem] ">
-                    The first gastronomic race RUN & EATDubai will be held already this fall
-                </h2>
+                {/*<h2 className="text-5xl absolute text-background text-end -z-10 bottom-32 right-32 w-[32rem] ">*/}
+                {/*    The first gastronomic race RUN & EATDubai will be held already this fall*/}
+                {/*</h2>*/}
             </div>
         </>
     )
