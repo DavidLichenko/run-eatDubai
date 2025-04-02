@@ -304,7 +304,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                 }
                 rightHalf={
                     <motion.div initial={{opacity: 0.3}} whileInView={{opacity: 1}} transition={{delay: 0.3}}
-                                className={'flex flex-col gap-6 w-1/2'}>
+                                className={'flex flex-col gap-6 w-full ml-28'}>
 
 
                         <div className={'flex flex-col gap-3 justify-center items-start '}  >

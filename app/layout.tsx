@@ -12,15 +12,15 @@ const roboto = Doppio_One({
 })
 
 export const metadata: Metadata = {
-    title: "Next JS SaaS Starter Template",
-    description: "Next JS SaaS Starter Template",
+    title: "Run&EatDUBAi",
+    description: "OUR RACE MAKES YOU FALL IN LOVE WITH RUNNING",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" suppressHydrationWarning>
         <head>
-            <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+            <link rel="icon" href="/logo.png" type="image/png" />
         </head>
         <body className={`${roboto.variable} font-sans bg-background text-foreground min-h-screen`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
