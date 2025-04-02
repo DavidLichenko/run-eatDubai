@@ -12,8 +12,6 @@ import Download from "components/Download";
 import {Button} from 'components/components/ui/button'
 import {motion, useScroll, useSpring, useTransform} from "framer-motion"
 import {useEffect, useState, useRef} from "react";
-// import Counter from "components/AnimatedCounter";
-// import useOnScreen from "components/CheckOnScreen";
 import SlotCounter from 'react-slot-counter';
 
 export default function Page() {
