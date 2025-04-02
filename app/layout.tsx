@@ -26,9 +26,12 @@ import "styles/globals.css";
 //     variable: '--font-dinpro'
 // });
 
-import {Glory} from "next/font/google"
+import {Oswald} from "next/font/google"
+//Oswald
+//Caveaut
+//Amatic
 
-const roboto = Glory({
+const roboto = Oswald({
     subsets:["latin"],
     weight: ["400","700"],
     variable: '--font-roboto'

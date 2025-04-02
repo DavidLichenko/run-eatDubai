@@ -57,7 +57,7 @@ export default function Hero() {
                         initial={{y: 30, opacity: 0}}
                         animate={{y: 0, opacity: 1}}
                         transition={{duration: 0.4, delay: 0.1}}
-                        className={'w-full mx-auto flex items-center justify-center absolute top-32 left-0'}
+                        className={'w-full mx-auto flex items-center justify-center  top-32 left-0'}
                     >
                         <img src="/Banner.jpg" className={'w-3/4'} alt="banner"/>
                     </motion.div>
@@ -118,10 +118,10 @@ export default function Hero() {
 
                         </motion.div>
                     </h1>
-                    <h2 className="text-3xl absolute text-start sm:text-end text-secondary_text bottom-24 z-20 right-12 sm:right-60 w-[18rem] sm:w-[32rem] sm:text-5xl ">
+                    <h2 className="text-5xl font-light w-2/4 text-secondary_text mt-24">
                         <motion.div initial={{opacity: 0.3, x: 50}} animate={{x: 0, opacity: 1}}
                                     transition={{duration: 0.4, delay: 0.1, ease: "circIn"}}
-                                    className={'text-start sm:text-end'}>
+                                    className={'text-center'}>
                             The first gastronomic race RUN & EATDubai will be held already this fall
                         </motion.div>
                         {/*<motion.div initial={{opacity: 0.3, x: -30}} animate={{x: 0, opacity: 1}}*/}

@@ -38,7 +38,7 @@ export default function Page() {
 
     return (
         <ReactLenis root>
-            <div className="flex flex-col min-h-screen  bg-background">
+            <div className="flex flex-col min-h-full  bg-background">
                 {loading &&
                     <div
                         className="flex items-center justify-center top-0 bottom-0 left-0 right-0 sticky z-[9999] h-dvh w-full overflow-hidden bg-background">
@@ -66,16 +66,19 @@ export default function Page() {
                 {/*</div>*/}
                 {/*</motion.div>*/}
                 <Section leftHalf={
+                    <Features/>
+                } rightHalf={
+
                     <>
                         <motion.div
-                            initial={{opacity: 0, x: -15}}
+                            initial={{opacity: 0, x: 15}}
                             whileInView={{opacity: 1, x: 0}}
-                            exit={{opacity: 0, x: -15}}
+                            exit={{opacity: 0, x: 15}}
                             transition={{duration: 0.2, delay: 0.2, ease: "easeOut"}}
 
                         >
 
-                            <h2 className="text-3xl font-light">
+                            <h2 className="text-3xl text-end ">
                                 RUN & EAT is exactly how the idea ofthe race can be described, as the real gastronomic
                                 pit stops await the runners
                                 along the route, where participants will enjoy delicious of local cuisine. Eachpit stop
@@ -84,8 +87,6 @@ export default function Page() {
                             </h2>
                         </motion.div>
                     </>
-                } rightHalf={
-                    <Features/>
                 }>
 
                 </Section>
@@ -248,7 +249,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                                 {/*<h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-white mb-4">*/}
                                 {/*    Highlight the key features*/}
                                 {/*</h2>*/}
-                                <p className="text-4xl font-light text-right">
+                                <p className="text-4xl  text-right">
                                     RUN & EAT Dubai is a unique experience for our participants, offering you not only to
                                     test
                                     your physical abilities, but also to enjoy the rich culinary diversity of the United
@@ -266,7 +267,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                                 {/*<h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-white mb-4">*/}
                                 {/*    Highlight the key features*/}
                                 {/*</h2>*/}
-                                <p className="text-4xl font-light text-left">
+                                <p className="text-4xl  text-left">
                                     Our athletes can choose 5 km or 10 km distances to run. Our young participants will run
                                     a children's race at distances of 500 m and 1 km.
                                 </p>
@@ -313,8 +314,8 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                     }
                 />
                 <Section
-                    leftHalf={<div className={'flex flex-col gap-6 relative -top-10 items-start justify-start'}>
-                        <div className={'flex h-1/2 justify-start left-0 relative w-full'}>
+                    leftHalf={<div className={'flex flex-col gap-6 relative  items-start justify-start'}>
+                        <div className={'flex justify-start left-0 relative w-full'}>
 
                             <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
                                         transition={{duration: 0.4, delay: 0.3, ease: "backOut"}}
