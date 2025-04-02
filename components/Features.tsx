@@ -1,61 +1,53 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
-import { FaReact, FaDatabase, FaShieldAlt } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiStripe } from "react-icons/si";
+import { motion } from "framer-motion"
+import {AiOutlineTeam} from "react-icons/ai";
 
+import {HandshakeIcon, HeartHandshakeIcon, HelpingHand} from "lucide-react";
+import {TbShoe} from "react-icons/tb";
 const Features = () => {
   const features = [
     {
-      icon: SiNextdotjs,
-      title: "Next.js 14",
-      description: "App dir, Routing, Layouts, components, and more.",
+      icon: TbShoe,
+      title: "ABOUT THE RACE",
     },
     {
-      icon: FaReact,
-      title: "React 18",
-      description: "Server and Client Components. using hooks and context.",
+      icon: AiOutlineTeam,
+      title: "CORPORATE TEAM",
     },
     {
-      icon: FaDatabase,
-      title: "Database",
-      description: "Postgres basic database and other cool features to come.",
+      icon: HandshakeIcon,
+      title: "BECOME A PARTNER",
     },
     {
-      icon: SiTailwindcss,
-      title: "Components",
-      description: "Awesome components built with Tailwind CSS and more to come.",
-    },
-    {
-      icon: FaShieldAlt,
-      title: "Authentication",
-      description: "Talk about your authentication features built into your app.",
-    },
-    {
-      icon: SiStripe,
-      title: "Subscriptions",
-      description: "Talk about your subscription features and how they work.",
+      icon: HeartHandshakeIcon,
+      title: "BECOME A VOLUNTEER",
     },
   ];
 
   return (
-    <section className="container mx-auto px-4 py-12 bg-gray-50 dark:bg-gray-900 transition-colors duration-200 rounded-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-white mb-4">Features</h2>
-          <p className="mt-8 text-xl text-gray-600 dark:text-gray-300 font-light">
-            Highlight cool features of your app using the beautifully designed custom cards with icons. You can use any
-            icon you want.
-          </p>
-        </div>
-        <div className="mt-10">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature, index) => (
-              <FeatureCard key={index} {...feature} />
-            ))}
+      <section className="container mx-auto px-4 transition-colors duration-200 rounded-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="">
+            <div className="flex flex-col float-end gap-8">
+              {features.map((feature, index) => (
+                  <motion.div
+                      initial={{opacity: 0, x: 30}}
+                      whileInView={{opacity: 1, x: 0}}
+                      whileHover={{scale: 1.2}}
+                      whileTap={{scale: 0.8}}
+                      exit={{opacity: 0, x: 30}}
+                      transition={{duration: 0.2, delay: 0.01, ease: "backInOut"}}
+
+                  >
+                    <FeatureCard key={index} {...feature} />
+                  </motion.div>
+              ))}
+
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
 
