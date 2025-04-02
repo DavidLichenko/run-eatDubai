@@ -453,7 +453,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                         </motion.div>
                     </div>
                 </div>
-                <div className={'min-h-[80vh] flex flex-col gap-6 items-start justify-start mt-32 w-1/2 mx-auto'}>
+                <div className={'min-h-full py-32 flex flex-col gap-6 items-start justify-start mt-32 w-1/2 mx-auto'}>
 
                     <motion.div initial={{y: 30, opacity: 0}}
                                 whileInView={{y: 0, opacity: 1, transition: {duration: 0.4, delay: .1}}}
@@ -468,7 +468,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                     <motion.button initial={{y: 30, opacity: 0}}
                                    whileInView={{y: 0, opacity: 1, transition: {duration: 1.2, delay: .3}}}
                                    whileHover={{scale: 1.2}} whileTap={{scale: 1.1}}
-                                   className="px-8 py-2 mt-32 w-full text-2xl rounded-lg bg-text text-black font-light mx-auto">
+                                   className="px-8 py-2 mt-16 w-full text-2xl rounded-lg bg-text text-black font-light mx-auto">
                         REGISTER
                     </motion.button>
                 </div>
