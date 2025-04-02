@@ -25,7 +25,7 @@ function MenuIcon(props) {
 }
 export default function Header() {
   return (
-      <header className="bg-background shadow-sm border-b z-10 border-gray-200 dark:border-gray-800">
+      <header className="bg-background sticky top-0 shadow-sm border-b z-10 border-gray-200 dark:border-gray-800">
         <div className="container mx-auto px-4 py-2 flex justify-between items-center">
 
           <nav className="flex items-center w-full justify-between">
@@ -67,33 +67,7 @@ export default function Header() {
                 </li>
               </motion.div>
             </ul>
-            <ul className={'flex gap-7 sm:gap-4 mr-7 sm:mr-12'}>
-              <motion.div
-                  initial={{opacity: 0, x: 30}}
-                  whileInView={{opacity: 1, x: 0}}
-                  whileHover={{scale: 1.2}}
-                  whileTap={{scale: 0.8}}
-                  className={'sm:block hidden'}
-                  exit={{opacity: 0, x: 30}}
-                  transition={{duration: 0.2, ease: "backInOut"}}
 
-              >
-                <li><Link href={'#'}><AiOutlineInstagram className={'w-7 h-7'}/></Link></li>
-              </motion.div>
-              <motion.div
-                  initial={{opacity: 0, x: 30}}
-                  whileInView={{opacity: 1, x: 0}}
-                  whileHover={{scale: 1.2}}
-                  className={'sm:block hidden'}
-                  whileTap={{scale: 0.8}}
-                  exit={{opacity: 0, x: 30}}
-                  transition={{duration: 0.2, ease: "backInOut"}}
-
-              >
-                <li><Link href={'#'}><AiOutlineWhatsApp className={'w-7 h-7'}/></Link></li>
-              </motion.div>
-              {/*<li><Link href={'#'}>asd</Link></li>*/}
-            </ul>
             <div className="mr-6">
               <ThemeSwitch/>
             </div>

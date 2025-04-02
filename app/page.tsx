@@ -19,16 +19,15 @@ import SlotCounter from 'react-slot-counter';
 
 export default function Page() {
     const targetRef = useRef(null);
-    const { theme } = useTheme();
+    const { theme, setTheme } = useTheme();
     const [loading,setLoading] = useState<boolean>(true);
     const { scrollYProgress } = useScroll({ target: targetRef });
     useEffect(() => {
-        console.log(theme)
         setLoading(false);
-    }, []);
-    const x = useTransform(scrollYProgress, [0,1], ['15%','-15%'])
-    const minus_x = useTransform(scrollYProgress, [1,0], ['35%','-20%'])
-    const x_x = useTransform(scrollYProgress, [0,1], ['15%','-25%'])
+    }, [theme]);
+    const x = useTransform(scrollYProgress, [0,1], ['60%','-5%'])
+    const minus_x = useTransform(scrollYProgress, [1,0], ['0%','-20%'])
+    const x_x = useTransform(scrollYProgress, [0,1], ['70%','-10%'])
     const physics = { damping: 15, mass: 0.27, stiffness: 55 } // easing of smooth scroll
     const spring = useSpring(x, physics) // apply easing to the negative scroll value
     const springX = useSpring(minus_x, physics) // apply easing to the negative scroll value
@@ -49,7 +48,10 @@ export default function Page() {
                     </div>
                 </div>
             }
-            <Header/>
+            <div className=" w-full fixed z-[9999] top-0">
+
+                <Header/>
+            </div>
             {/*<motion.div*/}
             {/*    initial={{opacity: 0}}*/}
             {/*    whileInView={{opacity: 1}}*/}
@@ -140,16 +142,29 @@ export default function Page() {
                                 }}
                                 className={'z-30 relative'}
                             >
-                                <svg width={220} className={'!z-30 bottom-0 relative left-16'} height="212"
+                                <svg width={220} className={'!z-30 bottom-0 relative left-16 hidden dark:block'} height="212"
                                      viewBox="0 0 303 212" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M176 37.5C176 43.7395 175.066 47.4767 174.015 49.6972C173.073 51.686 171.899 52.7801 170.368 53.5834C168.593 54.5152 165.997 55.2177 162.109 55.6036C158.21 55.9906 153.8 56 148.5 56C143.2 56 138.79 55.9906 134.891 55.6036C131.003 55.2177 128.407 54.5152 126.632 53.5834C125.101 52.7801 123.927 51.686 122.985 49.6972C121.934 47.4767 121 43.7395 121 37.5C121 22.3122 133.312 10 148.5 10C163.688 10 176 22.3122 176 37.5Z"
-                                        stroke={`${theme == 'light' ? 'black' : 'white'}`} strokeWidth="20"/>
+                                        stroke={`white`} strokeWidth="20"/>
                                     <path
 
                                         d="M292.685 202H10.0012C9.83568 131.842 69.4098 66 151.757 66C230.114 66 287.942 126.97 292.685 202Z"
-                                        fill={`${theme == 'light' ? 'black' : 'white'}`} stroke={`${theme == 'light' ? 'black' : 'white'}`}  strokeWidth="20"/>
+                                        fill={`white`}
+                                        stroke={`white`} strokeWidth="20"/>
+                                </svg>
+                                <svg width={220} className={'!z-30 bottom-0 relative left-16 block dark:hidden'} height="212"
+                                     viewBox="0 0 303 212" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M176 37.5C176 43.7395 175.066 47.4767 174.015 49.6972C173.073 51.686 171.899 52.7801 170.368 53.5834C168.593 54.5152 165.997 55.2177 162.109 55.6036C158.21 55.9906 153.8 56 148.5 56C143.2 56 138.79 55.9906 134.891 55.6036C131.003 55.2177 128.407 54.5152 126.632 53.5834C125.101 52.7801 123.927 51.686 122.985 49.6972C121.934 47.4767 121 43.7395 121 37.5C121 22.3122 133.312 10 148.5 10C163.688 10 176 22.3122 176 37.5Z"
+                                        stroke={`black`} strokeWidth="20"/>
+                                    <path
+
+                                        d="M292.685 202H10.0012C9.83568 131.842 69.4098 66 151.757 66C230.114 66 287.942 126.97 292.685 202Z"
+                                        fill={`black`}
+                                        stroke={`black`} strokeWidth="20"/>
                                 </svg>
                             </motion.button>
                             {/*Food*/}
@@ -185,11 +200,30 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                                 <mask id="path-1-inside-1_93_13" fill="white">
                                     <rect width="300" height="66" rx="10"/>
                                 </mask>
-                                <rect width="300" height="66" rx="10" stroke={`${theme == 'light' ? 'black' : 'white'}`} strokeWidth="40"
+                                <rect className={"block dark:hidden"} width="300" height="66" rx="10" stroke={`black`}
+                                      strokeWidth="40"
+                                      mask="url(#path-1-inside-1_93_13)"/>
+                                <rect  className={"hidden dark:block"} width="300" height="66" rx="10" stroke={`white`}
+                                      strokeWidth="40"
                                       mask="url(#path-1-inside-1_93_13)"/>
                             </svg>
                             <motion.div
                                 initial={{translateY: 0}}
+                                whileInView={{translateY: '-20px'}}
+                                className={"hidden dark:block"}
+                                transition={{duration: 0.8, delay: 0.1, ease: 'circInOut'}}
+                            >
+
+                                <svg width={256} className={'z-20'} viewBox="0 0 449 132" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <motion.path
+                                        d="M88.5 38.915H116C120.167 29.415 132.5 10.415 148.5 10.415C164.5 10.415 238.833 10.415 274 10.415C288.5 10.4153 309 39.585 267 62.5M88.5 38.915V12.5H10V121.416H88.5V105.916M88.5 38.915V105.916M267 62.5C247.5 65.5 200.5 57.9995 200.5 77.415M267 62.5C307.5 57 410.5 29.4156 410.5 29.4156C446.5 25.9995 444 67.4995 426.5 77.415L274 121.416H148.5C146.1 119.416 127 105.916 116 105.916H88.5"
+                                        stroke={'white'} strokeWidth="20"/>
+                                </svg>
+                            </motion.div>
+                            <motion.div
+                                initial={{translateY: 0}}
+                                className={"block dark:hidden"}
                                 whileInView={{translateY: '-20px'}}
                                 transition={{duration: 0.8, delay: 0.1, ease: 'circInOut'}}
                             >
@@ -198,7 +232,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                                      xmlns="http://www.w3.org/2000/svg">
                                     <motion.path
                                         d="M88.5 38.915H116C120.167 29.415 132.5 10.415 148.5 10.415C164.5 10.415 238.833 10.415 274 10.415C288.5 10.4153 309 39.585 267 62.5M88.5 38.915V12.5H10V121.416H88.5V105.916M88.5 38.915V105.916M267 62.5C247.5 65.5 200.5 57.9995 200.5 77.415M267 62.5C307.5 57 410.5 29.4156 410.5 29.4156C446.5 25.9995 444 67.4995 426.5 77.415L274 121.416H148.5C146.1 119.416 127 105.916 116 105.916H88.5"
-                                        stroke={`${theme == 'light' ? 'black' : 'white'}`} strokeWidth="20"/>
+                                        stroke={'black'} strokeWidth="20"/>
                                 </svg>
                             </motion.div>
 
@@ -282,7 +316,13 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
 
                         <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
                                     transition={{duration: 0.4, delay: 0.3, ease: "backOut"}}
-                                    className={'relative -left-40'} width={512} height={512} src={`${theme == 'light' ? 'Tshirt.svg' : 'TshirtWhite.svg'}`}
+                                    className={'relative -left-40 hidden dark:block'} width={512} height={512}
+                                    src={'TshirtWhite.svg'}
+                                    alt="Tshirt"/>
+                        <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
+                                    transition={{duration: 0.4, delay: 0.3, ease: "backOut"}}
+                                    className={'relative -left-40 block dark:hidden'} width={512} height={512}
+                                    src={'Tshirt.svg'}
                                     alt="Tshirt"/>
                         {/*<img width={256} height={256} src="/TShirtWhite.svg" alt="Tshirt"/>*/}
                     </div>
@@ -293,8 +333,18 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                                         transition: {duration: 0.4, delay: 0.6, ease: "backOut"}
                                     }}
                                     whileHover={{scale: 1.3, transition: {delay: 0}}}
-                                    className={'relative top-10 right-52'}
-                                    width={128} height={128} src={`${theme == 'light' ? 'medalBlack.svg' : 'medal.svg'}`} alt="Tshirt"/>
+                                    className={'relative top-10 right-52 hidden dark:block'}
+                                    width={128} height={128}
+                                    src={'medal.svg'} alt="Tshirt"/>
+                        <motion.img initial={{rotate: 0, scale: 1.2}}
+                                    whileInView={{
+                                        rotate: -25,
+                                        transition: {duration: 0.4, delay: 0.6, ease: "backOut"}
+                                    }}
+                                    whileHover={{scale: 1.3, transition: {delay: 0}}}
+                                    className={'relative top-10 right-52 block dark:hidden'}
+                                    width={128} height={128}
+                                    src={'medalBlack.svg'} alt="Tshirt"/>
 
                     </div>
                 </div>}

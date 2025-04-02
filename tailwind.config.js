@@ -5,7 +5,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['var(--font-dinpro)'],
+                sans: ['var(--font-roboto)'],
             },
             borderRadius: {
                 lg: 'var(--radius)',

@@ -4,48 +4,55 @@ import {motion, useScroll, useSpring, useTransform} from "framer-motion"
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/all"
+import {AiOutlineInstagram, AiOutlineWhatsApp} from "react-icons/ai";
 gsap.registerPlugin(ScrollTrigger)
 export default function Hero() {
-    useGSAP(() => {
-        gsap.set('#heroSection', {
-            clipPath: 'polygon(15% 0, 100% 0%, 88% 100%, 0% 100%)',
-            // borderRadius: '0 0 40% 10%'
-        })
-        gsap.from("#heroSection", {
-            clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-            borderRadius: '0 0 0 0',
-            ease: 'power1.inOut',
-            scrollTrigger: {
-                trigger: '#heroSection',
-                start: 'center center',
-                end: 'bottom center',
-                scrub: true
-            }
-
-        })
-    })
-
     return (
         <>
 
-            <div className="relative z-20 bg-foreground">
+            <div className="relative z-20 mt-20 bg-foreground">
                 <section
-                    className="flex items-center w-full mx-auto h-screen bg-background z-10 text-center justify-between"
-                    id='heroSection'>
-                    <motion.div
-                        initial={{y: 30, opacity: 0}}
-                        animate={{y: 0, opacity: 1}}
-                        transition={{duration: 0.4, delay: 0.1}}
-                        className={'w-full mx-auto flex items-center justify-center'}
+                    className="flex flex-col items-center w-full mx-auto h-screen bg-background z-10 text-center ">
+                    <div
+                        className={' mx-auto flex items-center w-full'}
                     >
-                        <div className="flex items-start gap-4 mt-6 absolute ml-36 top-0">
+                        <div className="flex items-start w-2/3 mx-auto justify-between gap-4 mt-6">
+                            <div className={'flex gap-4 items-start'}>
+                                <img className={'-right-6 relative -top-3'} src="logo2.png" alt="logo"
+                                     width="90" height="80"/>
+                                <div className={'h-full border-r-2 border-secondary_text'}></div>
+                                <h3 className="text-xl pl-4 leading-6 text-left border-l-2 border-cyan-700 uppercase text-secondary_text">Gastronomic <br/> Race
+                                </h3>
+                            </div>
+                            <div className={'flex gap-4'}>
+                                <motion.div
+                                    initial={{opacity: 0, x: 30}}
+                                    whileInView={{opacity: 1, x: 0}}
+                                    whileHover={{scale: 1.2}}
+                                    whileTap={{scale: 0.8}}
+                                    className={'sm:block hidden'}
+                                    exit={{opacity: 0, x: 30}}
+                                    transition={{duration: 0.2, ease: "backInOut"}}
 
-                            <img className={'-right-6 relative -top-3'} src="logo2.png" alt="logo"
-                                 width="90" height="80"/>
-                            <div className={'h-full border-r-2 border-secondary_text'}></div>
-                            <h3 className="text-xl pl-4 leading-6 text-left border-l-2 border-cyan-700 uppercase text-secondary_text">Gastronomic <br/> Race</h3>
+                                >
+                                    <Link href={'#'}><AiOutlineInstagram className={'w-7 h-7'}/></Link>
+                                </motion.div>
+                                <motion.div
+                                    initial={{opacity: 0, x: 30}}
+                                    whileInView={{opacity: 1, x: 0}}
+                                    whileHover={{scale: 1.2}}
+                                    className={'sm:block hidden'}
+                                    whileTap={{scale: 0.8}}
+                                    exit={{opacity: 0, x: 30}}
+                                    transition={{duration: 0.2, ease: "backInOut"}}
+
+                                >
+                                    <Link href={'#'}><AiOutlineWhatsApp className={'w-7 h-7'}/></Link>
+                                </motion.div>
+                            </div>
                         </div>
-                    </motion.div>
+
+                    </div>
                     <motion.div
                         initial={{y: 30, opacity: 0}}
                         animate={{y: 0, opacity: 1}}
