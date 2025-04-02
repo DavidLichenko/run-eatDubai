@@ -50,9 +50,9 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <div className="flex text-2xl px-2.5 hover:cursor-pointer text-secondary_text hover:text-white hover:bg-secondary_text items-center">
-                    <img src={"/logo.svg"} alt="section-image"
-                           className=" w-20 dark:bg-transparent p-1  dark:border-gray-400"/>
+                  <div className="flex text-2xl hover:cursor-pointer text-secondary_text hover:scale-110 duration-75 ease-in items-center">
+                    <img src={"/logo123.svg"} alt="section-image"
+                           className=" w-20 dark:bg-transparent  px-2.5 py-1 mx-2 bg-secondary_text dark:border-gray-400"/>
                     {/*LOGO*/}
                     {/*RUN&EAT*/}
                   </div>

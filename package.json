@@ -20,6 +20,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.6.2",
     "gsap": "^3.12.7",
+    "lenis": "^1.2.3",
     "lucide-react": "^0.484.0",
     "matter-js": "^0.19.0",
     "motion": "^12.6.2",
