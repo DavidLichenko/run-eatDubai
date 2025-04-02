@@ -8,19 +8,16 @@ import {TbShoe} from "react-icons/tb";
 const Features = () => {
   const features = [
     {
-      icon: TbShoe,
       title: "ABOUT THE RACE",
     },
     {
-      icon: AiOutlineTeam,
       title: "CORPORATE TEAM",
     },
     {
-      icon: HandshakeIcon,
+
       title: "BECOME A PARTNER",
     },
     {
-      icon: HeartHandshakeIcon,
       title: "BECOME A VOLUNTEER",
     },
   ];

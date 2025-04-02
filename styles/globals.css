@@ -5,6 +5,13 @@
     /*height: auto;*/
     width: clamp(10rem, 50vw, 60rem);
 }
+:root {
+      --font-dinpro: 'DIN Pro', sans-serif;
+}
+
+body {
+      font-family: var(--font-dinpro);
+}
 @layer base {
   :root {
         --background: 0 0% 100%;

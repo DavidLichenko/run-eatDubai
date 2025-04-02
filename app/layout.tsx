@@ -1,15 +1,35 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-
+import localFont from '@next/font/local'
 import "styles/globals.css";
 
-import {Doppio_One} from "next/font/google"
+const dinPro = localFont({
+    src: [
+        {
+            path:"../public/fonts/dinpro_light.otf",
+            weight:"400"
+        },
+        {
+            path:"../public/fonts/dinpro.otf",
+            weight:"500"
+        },
+        {
+            path:"../public/fonts/dinpro_italic.otf",
+            weight:"400",
+            style:'italic',
+        },
+        {
+            path:"../public/fonts/dinpro_bold.otf",
+            weight:"700"
+        },
+    ], // Use an absolute path from the public folder
+    variable: '--font-dinpro'
+});
 
-const roboto = Doppio_One({
-    subsets:["latin"],
-    weight: ["400"],
-    variable: '--font-roboto'
-})
+// const roboto = localFont({
+//     src: "fonts/dinpro.otf",
+//     variable:'--font-roboto'
+// })
 
 export const metadata: Metadata = {
     title: "Run&EatDUBAi",
@@ -20,9 +40,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en" suppressHydrationWarning>
         <head>
-            <link rel="icon" href="/logo.png" type="image/png" />
+            <link rel="icon" href="/logo.svg" type="image/png" />
         </head>
-        <body className={`${roboto.variable} font-sans bg-background text-foreground min-h-screen`} suppressHydrationWarning>
+        <body className={`${dinPro.variable} font-sans bg-background text-foreground min-h-screen`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
         </ThemeProvider>

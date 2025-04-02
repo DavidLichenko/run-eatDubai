@@ -1,10 +1,9 @@
 import React from "react";
 
-const FeatureCard = ({ icon: Icon, title }) => {
+const FeatureCard = ({  title }) => {
   return (
-    <div className=" flex gap-4 border-text border-2 items-center justify-between  p-4 rounded-lg shadow-md transition-colors duration-200 hover:cursor-pointer">
-      <Icon size={34} />
-      <h3 className="text-xl font-semibold text-gray-800 dark:text-white">{title}</h3>
+    <div className=" flex gap-4 bg-secondary_text text-white text-center items-center justify-center  p-4 rounded-lg shadow-md transition-colors duration-200 hover:cursor-pointer">
+      <h3 className="text-xl text-center font-bold">{title}</h3>
     </div>
   );
 };
