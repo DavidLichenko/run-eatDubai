@@ -74,7 +74,7 @@ export default function Header() {
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full  sm:hidden">
-                  <MenuIcon className=" text-gray-500 dark:text-gray-400 !w-48 !h-8" />
+                  <MenuIcon className=" !w-48 !h-8" />
                   <span className="sr-only">Toggle navigation menu</span>
                 </Button>
               </SheetTrigger>
@@ -82,35 +82,35 @@ export default function Header() {
                 <div className="flex flex-col items-center mt-12 justify-center gap-4 p-4">
                   <Link
                       href="/contact"
-                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900  dark:hover:text-gray-50"
                       prefetch={false}
                   >
                     CONTACT
                   </Link>
                   <Link
                       href="/about"
-                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900  dark:hover:text-gray-50"
                       prefetch={false}
                   >
                     ABOUT THE RACE
                   </Link>
                   <Link
                       href="/corporate_team"
-                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900  dark:hover:text-gray-50"
                       prefetch={false}
                   >
                     CORPORATE TEAM
                   </Link>
                   <Link
                       href="/become_partner"
-                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900  dark:hover:text-gray-50"
                       prefetch={false}
                   >
                     BECOME A PARTNER
                   </Link>
                   <Link
                       href="/volunteer"
-                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900 dark:hover:text-gray-50"
                       prefetch={false}
                   >
                     BECOME A VOLUNTEER
