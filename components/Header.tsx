@@ -78,21 +78,42 @@ export default function Header() {
                   <span className="sr-only">Toggle navigation menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="md:hidden">
-                <div className="flex flex-col items-end mt-20 justify-center gap-4 p-4">
+              <SheetContent side="right" className="md:hidden  z-[9999]">
+                <div className="flex flex-col items-center mt-12 justify-center gap-4 p-4">
                   <Link
-                      href="#"
-                      className="text-2xl font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                      href="/contact"
+                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
                       prefetch={false}
                   >
-                    About
+                    CONTACT
                   </Link>
                   <Link
-                      href="#"
-                      className="text-2xl font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                      href="/about"
+                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
                       prefetch={false}
                   >
-                    Contact
+                    ABOUT THE RACE
+                  </Link>
+                  <Link
+                      href="/corporate_team"
+                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                      prefetch={false}
+                  >
+                    CORPORATE TEAM
+                  </Link>
+                  <Link
+                      href="/become_partner"
+                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                      prefetch={false}
+                  >
+                    BECOME A PARTNER
+                  </Link>
+                  <Link
+                      href="/volunteer"
+                      className="text-2xl w-full bg-secondary_text py-2 px-6 rounded-sm font-medium text-background hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                      prefetch={false}
+                  >
+                    BECOME A VOLUNTEER
                   </Link>
                   <div className="flex gap-8 mt-6">
                     <motion.div

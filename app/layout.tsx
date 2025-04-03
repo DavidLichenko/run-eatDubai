@@ -56,7 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <head>
             <link rel="icon" href="/logo.svg" type="image/png" />
         </head>
-        <body className={`${roboto.variable} font-sans bg-background text-foreground min-h-screen`} suppressHydrationWarning>
+        <body className={`${roboto.variable}  overflow-x-hidden font-sans bg-background text-foreground min-h-screen`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <ReactLenis root>
             {children}

@@ -12,16 +12,15 @@ export default function Hero() {
 
             <div className="relative z-20 bg-foreground">
                 <section
-                    className="flex flex-col items-center w-full mx-auto justify-center h-screen bg-background z-10 text-center ">
+                    className="flex flex-col items-center w-full  mx-auto pt-20 pb-20 md:pb-0 md:pt-24 md:justify-start h-full md:h-screen bg-background z-10 text-center ">
                     <div
-                        className={' mx-auto flex items-center w-full'}
+                        className={' mx-auto flex md:items-start w-full'}
                     >
-                        <div className="flex items-start w-2/3 mx-auto justify-between gap-4 mt-6">
-                            <div className={'flex gap-4 items-start'}>
-                                <img className={'-right-6 relative -top-3'} src="logo2.png" alt="logo"
+                        <div className="flex md:items-start w-full md:w-2/3 mx-auto justify-between gap-4">
+                            <div className={'flex gap-4  items-start'}>
+                                <img className={'-right-6 relative -top-3 hidden md:block'} src="logo2.png" alt="logo"
                                      width="90" height="80"/>
-                                <div className={'h-full border-r-2 border-secondary_text'}></div>
-                                <h3 className="text-xl pl-4 leading-6 text-left border-l-2 border-cyan-700 uppercase text-secondary_text">Gastronomic <br/> Race
+                                <h3 className="container text-xl pl-4 leading-6 text-left border-l-2 border-cyan-700 uppercase text-secondary_text">Gastronomic <br/> Race
                                 </h3>
                             </div>
                             <div className={'flex gap-4'}>
@@ -57,9 +56,9 @@ export default function Hero() {
                         initial={{y: 30, opacity: 0}}
                         animate={{y: 0, opacity: 1}}
                         transition={{duration: 0.4, delay: 0.1}}
-                        className={'w-full mx-auto flex items-center justify-center  top-32 left-0'}
+                        className={'w-full mx-auto flex items-center justify-center mt-8 md:mt-0'}
                     >
-                        <img src="/Banner.jpg" className={'w-3/4'} alt="banner"/>
+                        <img src="/Banner.jpg" className={'w-full md:w-3/4'} alt="banner"/>
                     </motion.div>
 
 
@@ -86,10 +85,10 @@ export default function Hero() {
 
                         {/*</motion.div>*/}
                     </h1>
-                    <h2 className="text-5xl font-light w-2/4 text-secondary_text mt-24">
+                    <h2 className="text-5xl font-light w-full md:w-2/4 text-secondary_text mt-12">
                         <motion.div initial={{opacity: 0, y: 30}} whileInView={{y: 0, opacity: 1}}
                                     transition={{duration: 0.3, delay: 0.1, ease: "easeIn"}}
-                                    className={'text-center'}>
+                                    className={'text-left ml-12 md:ml-0 md:text-center'}>
                             The first gastronomic race RUN & EATDubai will be held already this fall
                         </motion.div>
                         {/*<motion.div initial={{opacity: 0.3, x: -30}} animate={{x: 0, opacity: 1}}*/}

@@ -30,7 +30,7 @@ const Features = () => {
       <section className="container mx-auto px-4 transition-colors duration-200 rounded-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="">
-            <div className="flex flex-col float-start gap-8">
+            <div className="flex flex-col md:float-start gap-8">
               {features.map((feature, index) => (
                   <motion.div
                       initial={{opacity: 0, x: -30}}
