@@ -6,11 +6,11 @@ import { motion } from "framer-motion"
 const Customers: React.FC = () => {
 
   return (
-      <div className="container mx-auto bg-background min-h-[70vh] flex px-32 justify-center items-center">
+      <div className="container mx-auto bg-background min-h-[70vh] flex px-6 pt-12 md:pt-0 md:px-32 justify-center items-center">
         <div className="w-full">
           <div className="flex flex-col md:flex-row items-center justify-between w-full mx-auto">
               <div className="flex flex-col md:flex-row w-full ">
-                  <h2 className="text-2xl  sm:text-2xl md:text-3xl lg:text-4xl font-light mb-6 md:mb-0 text-black dark:text-white text-center md:text-left md:w-1/3">
+                  <h2 className="text-2xl w-full  sm:text-2xl md:text-3xl lg:text-4xl font-light mb-6 md:mb-0 text-black dark:text-white text-center md:text-left md:w-1/3">
                       RUN & EAT — this is not just a slogan, but a philosophy that combines sports and gastronomy in one
                       exciting event.
                   </h2>
@@ -138,7 +138,7 @@ const Customers: React.FC = () => {
                       </div>
                       <div>
                           {/*<Image src={'/elements/7.png'} width={128} height={32} alt="element"/>*/}
-                          <motion.img src={'/elements/7.png'} initial={{left: -150, bottom: 10, scale: 0.4}}
+                          <motion.img src={'/elements/7.png'} initial={{left: -100, bottom: 10, scale: 0.4}}
                                       whileInView={{scale: 1}}
                                       animate={{
                                           translateZ: '32px',
@@ -158,7 +158,7 @@ const Customers: React.FC = () => {
                       </div>
                       <div>
                           {/*<Image src={'/elements/7.png'} width={128} height={32} alt="element"/>*/}
-                          <motion.img src={'/elements/2.png'} initial={{right: 10, bottom: 170, scale: 0.4}}
+                          <motion.img src={'/elements/2.png'} initial={{right: 10, bottom: 150, scale: 0.4}}
                                       whileInView={{scale: 1}}
                                       animate={{
                                           translateZ: '32px',
@@ -198,7 +198,7 @@ const Customers: React.FC = () => {
                       </div>
                       <div>
                           {/*<Image src={'/elements/7.png'} width={128} height={32} alt="element"/>*/}
-                          <motion.img src={'/elements/8.png'} initial={{right: -100, bottom: -20, scale: 0.4}}
+                          <motion.img src={'/elements/8.png'} initial={{right: -80, bottom: -20, scale: 0.4}}
                                       whileInView={{scale: 0.9}}
                                       animate={{
                                           translateZ: '32px',

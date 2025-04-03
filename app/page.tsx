@@ -125,7 +125,7 @@ export default function Page() {
             <Section
                 leftHalf={
                     <div>
-                        <div className={'relative left-20 md:static'}>
+                        <div className={'relative left-0 md:static'}>
                             {/*<Image alt={'g'} src={'/output-onlinegiftools.gif'} width={256} height={256}/>*/}
                             <motion.button
                                 initial={{translateY: '-30px', y: 20}}
@@ -318,18 +318,18 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                     }
                 />
             </div>
-            <div className="md:hidden block">
+            <div className="md:hidden hidden">
                 <Section
                     leftHalf={
                         <motion.div initial={{opacity: 0.3}} whileInView={{opacity: 1}} transition={{delay: 0.3}}
-                                    className={'flex flex-col gap-6 w-full md:ml-28'}>
-                            <div className={'flex flex-col gap-3 justify-center items-start '}>
+                                    className={' gap-6 w-full flex flex-col mx-12'}>
+                            <div className={'flex flex-col gap-3 justify-center items-start'}>
                                 <h2 className={'flex items-center justify-center gap-2 font-bold uppercase text-3xl text-center'}>
-                                <span className={'relative bottom-[2px]'}><SlotCounter value={5}
-                                                                                       animateOnVisible={true}/></span> km
+                                <span className={' bottom-[2px]'}><SlotCounter value={5}
+                                                                               animateOnVisible={true}/></span> km
                                 </h2>
 
-                                <svg width={206} height="22" viewBox="0 0 206 22" fill="none"
+                                <svg className={'scale-75'} width={206} height="22" viewBox="0 0 206 22" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <motion.path initial={{pathLength: 0}} whileInView={{pathLength: 1}}
                                                  transition={{duration: 0.5, delay: 0.2, ease: 'easeInOut'}}
@@ -338,11 +338,11 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                                 </svg>
                             </div>
                             <div className={'flex flex-col gap-3 justify-center items-start'}>
-                                <h2 className={'flex gap-2 font-bold uppercase text-3xl text-center'}>
+                                <h2 className={'flex items-center justify-center gap-2 font-bold uppercase text-3xl text-center'}>
                                  <span className={'relative bottom-[2px]'}><SlotCounter value={10}
                                                                                         animateOnVisible={true}/></span> km
                                 </h2>
-                                <svg width={406} height="50" viewBox="0 0 406 50" fill="none"
+                                <svg className={'scale-75'} width={406} height="50" viewBox="0 0 406 50" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <motion.path initial={{pathLength: 0}}
                                                  whileInView={{pathLength: 1}}
@@ -357,124 +357,168 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                         </motion.div>
                     }
                     rightHalf={
-
-                        <motion.div initial={{opacity: 0.3}} whileInView={{opacity: 1}} transition={{delay: 0.3}}>
-                            <div className="flex flex-col justify-end">
-                                {/*<h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-white mb-4">*/}
-                                {/*    Highlight the key features*/}
-                                {/*</h2>*/}
-                                <p className="text-4xl  text-left">
+                        <motion.div initial={{opacity: 0.3}} whileInView={{opacity: 1}} transition={{delay: 0.3}}
+                                    className={'w-3/4 ml-12'}>
+                            <div className="flex flex-col">
+                                <div className="text-4xl  text-left">
                                     Our athletes can choose 5 km or 10 km distances to run. Our young participants will
                                     run
                                     a children's race at distances of 500 m and 1 km.
-                                </p>
+                                </div>
                             </div>
                         </motion.div>
                     }
                 />
             </div>
-            <div className={'hidden md:block'}>
-            <Section
-                leftHalf={<div>
-                    <div className={'hidden flex-col gap-6 md:flex'}>
-                        <div className={'flex justify-start left-0 relative w-full'}>
-
-                            <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
-                                        transition={{duration: 0.4, delay: 0.5, ease: "backOut"}}
-                                        className={'relative -left-40 hidden dark:block'} width={512} height={512}
-                                        src={'TShirtWhite.svg'}
-                                        alt="Tshirt"/>
-                            <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
-                                        transition={{duration: 0.4, delay: 0.5, ease: "backOut"}}
-                                        className={'relative -left-20 w-96 h-96 dark:hidden'}
-                                        src={'TShirt.svg'}
-                                        alt="Tshirt"/>
-                            {/*<img width={256} height={256} src="/TShirtWhite.svg" alt="Tshirt"/>*/}
-                        </div>
-                        <div className={'flex justify-end h-1/2 relative bottom-40  w-full'}>
-                            <motion.img initial={{rotate: 0, scale: 1.2}}
-                                        whileInView={{
-                                            rotate: -25,
-                                            transition: {duration: 0.4, delay: 0.6, ease: "backOut"}
-                                        }}
-                                        whileHover={{scale: 1.3, transition: {delay: 0}}}
-                                        className={'relative top-10 right-52 hidden dark:block'}
-                                        width={128} height={128}
-                                        src={'medal.svg'} alt="Tshirt"/>
-                            <motion.img initial={{rotate: 0, scale: 1.2}}
-                                        whileInView={{
-                                            rotate: -25,
-                                            transition: {duration: 0.4, delay: 0.6, ease: "backOut"}
-                                        }}
-                                        whileHover={{scale: 1.3, transition: {delay: 0}}}
-                                        className={'relative top-10 right-52 block dark:hidden'}
-                                        width={128} height={128}
-                                        src={'medalBlack.svg'} alt="Tshirt"/>
-
+            <div className="md:hidden flex flex-col mt-12">
+                <motion.div initial={{opacity: 0.3}} whileInView={{opacity: 1}} transition={{delay: 0.3}}
+                            className={'ml-4'}>
+                    <div className="flex flex-col">
+                        <div className="text-4xl  text-left">
+                            Our athletes can choose 5 km or 10 km distances to run. Our young participants will
+                            run
+                            a children's race at distances of 500 m and 1 km.
                         </div>
                     </div>
-                </div>}
-                rightHalf={<div className={'absolute md:static'}>
-                    <div className={'flex absolute flex-col gap-6 md:hidden'}>
-                        <div className={'flex justify-start left-0 relative w-full'}>
+                </motion.div>
+                <motion.div initial={{opacity: 0.3}} whileInView={{opacity: 1}} transition={{delay: 0.3}}
+                            className={'gap-6 flex flex-col ml-4 my-10'}>
+                    <div className={'flex flex-col gap-3 justify-center items-start'}>
+                        <h2 className={'flex items-center justify-center gap-2 font-bold uppercase text-3xl text-center'}>
+                                <span className={' bottom-[2px]'}><SlotCounter value={5}
+                                                                               animateOnVisible={true}/></span> km
+                        </h2>
 
-                            <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
-                                        transition={{duration: 0.4, delay: 0.5, ease: "backOut"}}
-                                        className={'relative -left-52 -top-20 hidden dark:block'} width={512}
-                                        height={512}
-                                        src={'TShirtWhite.svg'}
-                                        alt="Tshirt"/>
-                            <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
-                                        transition={{duration: 0.4, delay: 0.5, ease: "backOut"}}
-                                        className={'relative -left-52 -top-44 w-96 h-96 dark:hidden'}
-                                        src={'TShirt.svg'}
-                                        alt="Tshirt"/>
-                            {/*<img width={256} height={256} src="/TShirtWhite.svg" alt="Tshirt"/>*/}
-                        </div>
-                        <div className={'flex justify-end h-1/2 relative bottom-40  w-full'}>
-                            <motion.img initial={{rotate: 0, scale: 1.2}}
-                                        whileInView={{
-                                            rotate: -25,
-                                            transition: {duration: 0.4, delay: 0.6, ease: "backOut"}
-                                        }}
-                                        whileHover={{scale: 1.3, transition: {delay: 0}}}
-                                        className={'relative top-10 right-0 hidden dark:block'}
-                                        width={128} height={128}
-                                        src={'medal.svg'} alt="Tshirt"/>
-                            <motion.img initial={{rotate: 0, scale: 1.2}}
-                                        whileInView={{
-                                            rotate: -25,
-                                            transition: {duration: 0.4, delay: 0.6, ease: "backOut"}
-                                        }}
-                                        whileHover={{scale: 1.3, transition: {delay: 0}}}
-                                        className={'relative -top-10 -right-52 block dark:hidden'}
-                                        width={128} height={128}
-                                        src={'medalBlack.svg'} alt="Tshirt"/>
-
-                        </div>
+                        <svg width={100} height="22" viewBox="0 0 206 22" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <motion.path initial={{pathLength: 0}} whileInView={{pathLength: 1}}
+                                         transition={{duration: 0.5, delay: 0.2, ease: 'easeInOut'}}
+                                         d="M3 0V11M3 22V11M3 11H203V0V22" stroke="#F2D118"
+                                         stroke-width="6"/>
+                        </svg>
                     </div>
-                    <p className="text-4xl font-light text-right mr-2 md:mr-0">
-                        Each participant will receive a run package with gifts from our partners, an official race
-                        T-shirt
-                        and an exclusive RUN & EAT medal at the finish line.
-                    </p>
-                    <p className="text-4xl font-light text-left ml-2 md:ml-0 md:text-right">
-                        <br/>
-                        <br/>
-                        A concert, master classes, tastings, contests and other activities from the organizers and
-                        partners
-                        will be organized in the runner’s village for the guests of the race.
-                    </p>
-                </div>}
-            />
+                    <div className={'flex flex-col gap-3 justify-center items-start'}>
+                        <h2 className={'flex items-center justify-center gap-2 font-bold uppercase text-3xl text-center'}>
+                                 <span className={'relative bottom-[2px]'}><SlotCounter value={10}
+                                                                                        animateOnVisible={true}/></span> km
+                        </h2>
+                        <svg width={200} height="50" viewBox="0 0 406 50" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <motion.path initial={{pathLength: 0}}
+                                         whileInView={{pathLength: 1}}
+                                         transition={{duration: 0.5, delay: 0.3, ease: 'easeInOut'}}
+                                         d="M3 0V10.5M3 21V10.5M3 10.5H403V0V21"
+                                         stroke="#F2D118" stroke-width="6"/>
+                        </svg>
+
+
+                    </div>
+
+                </motion.div>
             </div>
-            <div className={'h-full py-12 md:static md:hidden'}>
+            <div className={'hidden md:block'}>
+                <Section
+                    leftHalf={<div>
+                        <div className={'hidden flex-col gap-6 md:flex'}>
+                            <div className={'flex justify-start left-0 relative w-full'}>
+
+                                <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
+                                            transition={{duration: 0.4, delay: 0.5, ease: "backOut"}}
+                                            className={'relative -left-40 hidden dark:block'} width={512} height={512}
+                                            src={'TShirtWhite.svg'}
+                                            alt="Tshirt"/>
+                                <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
+                                            transition={{duration: 0.4, delay: 0.5, ease: "backOut"}}
+                                            className={'relative -left-20 w-96 h-96 dark:hidden'}
+                                            src={'TShirt.svg'}
+                                            alt="Tshirt"/>
+                                {/*<img width={256} height={256} src="/TShirtWhite.svg" alt="Tshirt"/>*/}
+                            </div>
+                            <div className={'flex justify-end h-1/2 relative bottom-40  w-full'}>
+                                <motion.img initial={{rotate: 0, scale: 1.2}}
+                                            whileInView={{
+                                                rotate: -25,
+                                                transition: {duration: 0.4, delay: 0.6, ease: "backOut"}
+                                            }}
+                                            whileHover={{scale: 1.3, transition: {delay: 0}}}
+                                            className={'relative top-10 right-52 hidden dark:block'}
+                                            width={128} height={128}
+                                            src={'medal.svg'} alt="Tshirt"/>
+                                <motion.img initial={{rotate: 0, scale: 1.2}}
+                                            whileInView={{
+                                                rotate: -25,
+                                                transition: {duration: 0.4, delay: 0.6, ease: "backOut"}
+                                            }}
+                                            whileHover={{scale: 1.3, transition: {delay: 0}}}
+                                            className={'relative top-10 right-52 block dark:hidden'}
+                                            width={128} height={128}
+                                            src={'medalBlack.svg'} alt="Tshirt"/>
+
+                            </div>
+                        </div>
+                    </div>}
+                    rightHalf={<div className={'absolute md:static'}>
+                        <div className={'flex absolute flex-col gap-6 md:hidden'}>
+                            <div className={'flex justify-start left-0 relative w-full'}>
+
+                                <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
+                                            transition={{duration: 0.4, delay: 0.5, ease: "backOut"}}
+                                            className={'relative -left-52 -top-20 hidden dark:block'} width={512}
+                                            height={512}
+                                            src={'TShirtWhite.svg'}
+                                            alt="Tshirt"/>
+                                <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
+                                            transition={{duration: 0.4, delay: 0.5, ease: "backOut"}}
+                                            className={'relative -left-52 -top-44 w-96 h-96 dark:hidden'}
+                                            src={'TShirt.svg'}
+                                            alt="Tshirt"/>
+                                {/*<img width={256} height={256} src="/TShirtWhite.svg" alt="Tshirt"/>*/}
+                            </div>
+                            <div className={'flex justify-end h-1/2 relative bottom-40  w-full'}>
+                                <motion.img initial={{rotate: 0, scale: 1.2}}
+                                            whileInView={{
+                                                rotate: -25,
+                                                transition: {duration: 0.4, delay: 0.6, ease: "backOut"}
+                                            }}
+                                            whileHover={{scale: 1.3, transition: {delay: 0}}}
+                                            className={'relative top-10 right-0 hidden dark:block'}
+                                            width={128} height={128}
+                                            src={'medal.svg'} alt="Tshirt"/>
+                                <motion.img initial={{rotate: 0, scale: 1.2}}
+                                            whileInView={{
+                                                rotate: -25,
+                                                transition: {duration: 0.4, delay: 0.6, ease: "backOut"}
+                                            }}
+                                            whileHover={{scale: 1.3, transition: {delay: 0}}}
+                                            className={'relative -top-10 -right-52 block dark:hidden'}
+                                            width={128} height={128}
+                                            src={'medalBlack.svg'} alt="Tshirt"/>
+
+                            </div>
+                        </div>
+                        <p className="text-4xl font-light text-right mr-2 md:mr-0">
+                            Each participant will receive a run package with gifts from our partners, an official race
+                            T-shirt
+                            and an exclusive RUN & EAT medal at the finish line.
+                        </p>
+                        <p className="text-4xl font-light text-left ml-2 md:ml-0 md:text-right">
+                            <br/>
+                            <br/>
+                            A concert, master classes, tastings, contests and other activities from the organizers and
+                            partners
+                            will be organized in the runner’s village for the guests of the race.
+                        </p>
+                    </div>}
+                />
+            </div>
+            <div className={'h-full py-12 static md:hidden'}>
                 <div className={'flex absolute flex-col gap-6 md:flex'}>
                     <div className={'flex justify-start left-0 relative w-full'}>
 
                         <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
                                     transition={{duration: 0.4, delay: 0.5, ease: "backOut"}}
-                                    className={'relative -left-56 -top-48 w-96 h-96 hidden dark:block'} width={512} height={512}
+                                    className={'relative -left-56 -top-48 w-96 h-96 hidden dark:block'} width={512}
+                                    height={512}
                                     src={'TShirtWhite.svg'}
                                     alt="Tshirt"/>
                         <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
@@ -484,7 +528,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                                     alt="Tshirt"/>
                         {/*<img width={256} height={256} src="/TShirtWhite.svg" alt="Tshirt"/>*/}
                     </div>
-                    <div className={'flex justify-end h-1/2 relative bottom-40  w-full'}>
+                    <div className={'flex justify-end h-1/2 hidden relative bottom-40  w-full'}>
                         <motion.img initial={{rotate: 0, scale: 1.2}}
                                     whileInView={{
                                         rotate: -25,
@@ -609,7 +653,8 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                     </motion.div>
                 </div>
             </div>
-            <div className={'min-h-full md:pt-12 md:pb-32 flex flex-col gap-6 items-start justify-start md:mx-auto md:mt-32 md:w-1/2 pb-12 mx-12'}>
+            <div
+                className={'min-h-full md:pt-12 md:pb-32 flex flex-col gap-6 items-start justify-start md:mx-auto md:mt-32 md:w-1/2 pb-12 mx-12'}>
 
                 <motion.div initial={{y: 30, opacity: 0}}
                             whileInView={{y: 0, opacity: 1, transition: {duration: 0.4, delay: .1}}}
