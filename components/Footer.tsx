@@ -8,13 +8,14 @@ import {
 } from "react-icons/ai";
 import {ArrowRight, ArrowRightFromLine, ArrowRightToLine} from "lucide-react";
 import {HiArrowRight} from "react-icons/hi";
+import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
       <footer className="bg-white border-t-2 border-gray-100 dark:bg-black shadow-sm text-gray-400 py-6 dark:border-t dark:border-gray-800">
-        <div className="flex w-5/6 ml-12 h-full py-12 justify-between gap-12 items-center">
+        <div className="flex w-5/6 mx-auto h-full py-12 justify-between gap-12 items-center">
           <div className="flex flex-col gap-6 items-start justify-start">
             <span className={'text-lg text-gray-500'}>Phone</span>
             <h2 className={'text-2xl  text-foreground hover:cursor-pointer'}>+971-50-478-1208</h2>
@@ -45,10 +46,10 @@ const Footer = () => {
         <div className="container border-t-2 pt-7 border-border  mx-auto px-4 flex flex-wrap justify-center sm:justify-between items-center text-sm">
           <p className="ml-4">&copy; {currentYear} Run&Eat Dubai. All rights reserved.</p>
           <div className="flex gap-4 mr-12 items-center">
-            <a href="#" className={'hover:text-foreground duration-150 ease-in'}>About the Race</a>
-            <a href="#" className={'hover:text-foreground duration-150 ease-in'}>Corporate Team</a>
-            <a href="#" className={'hover:text-foreground duration-150 ease-in'}>Become a Partner</a>
-            <a href="#" className={'hover:text-foreground duration-150 ease-in'}>Become a Volunteer</a>
+            <Link href="/about" className={'hover:text-foreground duration-150 ease-in'}>About the Race</Link>
+            <Link href="/corporate_team" className={'hover:text-foreground duration-150 ease-in'}>Corporate Team</Link>
+            <Link href="/become_partner" className={'hover:text-foreground duration-150 ease-in'}>Become a Partner</Link>
+            <Link href="/volunteer" className={'hover:text-foreground duration-150 ease-in'}>Become a Volunteer</Link>
           </div>
         </div>
       </footer>
