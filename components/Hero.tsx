@@ -10,9 +10,9 @@ export default function Hero() {
     return (
         <>
 
-            <div className="relative z-20 mt-20 bg-foreground">
+            <div className="relative z-20 bg-foreground">
                 <section
-                    className="flex flex-col items-center w-full mx-auto h-screen bg-background z-10 text-center ">
+                    className="flex flex-col items-center w-full mx-auto justify-center h-screen bg-background z-10 text-center ">
                     <div
                         className={' mx-auto flex items-center w-full'}
                     >
@@ -61,19 +61,7 @@ export default function Hero() {
                     >
                         <img src="/Banner.jpg" className={'w-3/4'} alt="banner"/>
                     </motion.div>
-                    <div className={'flex items-center absolute sm:relative justify-center'}>
-                        <div className={'flex items-center relative w-[500px] justify-center sm:w-[768px] '}>
-                            {/*<motion.div initial={{x: -300}} whileInView={{x: -50}} className={'z-10 hidden sm:block'}*/}
-                            {/*            transition={{duration: 0.7, delay: 0.1, ease: "backInOut"}}>*/}
-                            {/*    <img className={'h-full '} src="/bg.png" alt="bg"/>*/}
-                            {/*</motion.div>*/}
-                            <motion.div initial={{x: -300}} whileInView={{x: 20}}
-                                        className={'z-10 block absolute sm:hidden'}
-                                        transition={{duration: 0.7, delay: 0.1, ease: "backInOut"}} exit={{x: 500}}>
-                                <img className={'relative scale-150'} src="/bg.png" alt="bg"/>
-                            </motion.div>
-                        </div>
-                    </div>
+
 
 
                     <h1 className="font-sans text-text absolute top-52 z-50 pl-12 sm:pl-0 sm:right-32  text-5xl sm:text-5xl md:text-6xl lg:text-8xl w-1/3 mb-6">
@@ -97,30 +85,10 @@ export default function Hero() {
                         {/*    </span>*/}
 
                         {/*</motion.div>*/}
-                        <motion.div initial={{opacity: 0.3, x: -30}} animate={{x: 0, opacity: 1}}
-                                    transition={{duration: 0.4, delay: 0.1, ease: "circIn"}}
-                                    className={'text-start sm:text-end block sm:hidden'}>
-                            RUN & EAT
-
-
-                            <span className={'relative font-black w-full h-full'}>
-                                   <svg viewBox="0 0 194 11" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className={'transform scaleX(-1) sm:scaleX(1) w-40 sm:w-96  absolute -bottom-2 -right-2 z-50'}>
-                                <motion.path initial={{pathLength: 0, opacity: 0.4}}
-                                             animate={{pathLength: 1, opacity: 1}}
-                                             transition={{duration: 0.45, delay: 0.6, ease: "easeInOut"}}
-                                             d="M28.5 3.32516C102 2.32516 234.9 0.925164 178.5 3.32516C122.1 5.72516 36.6667 7.99185 1 8.8252"
-                                             stroke="#4DB92D" strokeWidth="3"/>
-                            </svg>
-                                DUBAI
-                            </span>
-
-                        </motion.div>
                     </h1>
                     <h2 className="text-5xl font-light w-2/4 text-secondary_text mt-24">
-                        <motion.div initial={{opacity: 0.3, x: 50}} animate={{x: 0, opacity: 1}}
-                                    transition={{duration: 0.4, delay: 0.1, ease: "circIn"}}
+                        <motion.div initial={{opacity: 0, y: 30}} whileInView={{y: 0, opacity: 1}}
+                                    transition={{duration: 0.3, delay: 0.1, ease: "easeIn"}}
                                     className={'text-center'}>
                             The first gastronomic race RUN & EATDubai will be held already this fall
                         </motion.div>

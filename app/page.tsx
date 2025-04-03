@@ -15,7 +15,7 @@ import {motion, useScroll, useSpring, useTransform} from "framer-motion"
 
 import {useEffect, useState, useRef} from "react";
 import SlotCounter from 'react-slot-counter';
-import ReactLenis from "lenis/dist/lenis-react";
+
 
 
 export default function Page() {
@@ -37,7 +37,7 @@ export default function Page() {
     const containerRef = useRef(null);
 
     return (
-        <ReactLenis root>
+
             <div className="flex flex-col min-h-full  bg-background">
                 {loading &&
                     <div
@@ -314,18 +314,18 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                     }
                 />
                 <Section
-                    leftHalf={<div className={'flex flex-col gap-6 relative  items-start justify-start'}>
+                    leftHalf={<div className={'flex flex-col gap-6 '}>
                         <div className={'flex justify-start left-0 relative w-full'}>
 
                             <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
                                         transition={{duration: 0.4, delay: 0.3, ease: "backOut"}}
                                         className={'relative -left-40 hidden dark:block'} width={512} height={512}
-                                        src={'TshirtWhite.svg'}
+                                        src={'TShirtWhite.svg'}
                                         alt="Tshirt"/>
                             <motion.img initial={{rotate: 0}} whileInView={{rotate: 25}}
                                         transition={{duration: 0.4, delay: 0.3, ease: "backOut"}}
-                                        className={'relative -left-40 block dark:hidden'} width={512} height={512}
-                                        src={'Tshirt.svg'}
+                                        className={'relative -left-20 w-96 h-96 dark:hidden'}
+                                        src={'TShirt.svg'}
                                         alt="Tshirt"/>
                             {/*<img width={256} height={256} src="/TShirtWhite.svg" alt="Tshirt"/>*/}
                         </div>
@@ -454,7 +454,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                         </motion.div>
                     </div>
                 </div>
-                <div className={'min-h-full py-32 flex flex-col gap-6 items-start justify-start mt-32 w-1/2 mx-auto'}>
+                <div className={'min-h-full pt-12 pb-32 flex flex-col gap-6 items-start justify-start mt-32 w-1/2 mx-auto'}>
 
                     <motion.div initial={{y: 30, opacity: 0}}
                                 whileInView={{y: 0, opacity: 1, transition: {duration: 0.4, delay: .1}}}
@@ -468,13 +468,12 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                     </motion.div>
                     <motion.button initial={{y: 30, opacity: 0}}
                                    whileInView={{y: 0, opacity: 1, transition: {duration: 1.2, delay: .3}}}
-                                   whileHover={{scale: 1.2}} whileTap={{scale: 1.1}}
-                                   className="px-8 py-2 mt-16 w-full text-2xl rounded-lg bg-text text-black font-light mx-auto">
+                                   whileHover={{scale: 1.05}} whileTap={{scale: 1}}
+                                   className="px-8 py-2 mt-16 w-full text-2xl rounded-lg bg-text text-black font-bold mx-auto">
                         REGISTER
                     </motion.button>
                 </div>
                 <Footer/>
             </div>
-        </ReactLenis>
     );
 }

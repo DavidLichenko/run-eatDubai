@@ -27,9 +27,13 @@ import "styles/globals.css";
 // });
 
 import {Oswald} from "next/font/google"
+import ReactLenis from "lenis/dist/lenis-react";
 //Oswald
 //Caveaut
 //Amatic
+//Merienda
+//Cardo
+//Antic
 
 const roboto = Oswald({
     subsets:["latin"],
@@ -54,7 +58,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </head>
         <body className={`${roboto.variable} font-sans bg-background text-foreground min-h-screen`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <ReactLenis root>
             {children}
+            </ReactLenis>
         </ThemeProvider>
         </body>
         </html>

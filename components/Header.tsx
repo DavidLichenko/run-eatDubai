@@ -43,7 +43,7 @@ export default function Header() {
               >
                 <li>
                   <Link
-                      href="/"
+                      href="/about"
                       className="text-sm hidden sm:flex uppercase  items-center font-light text-gray-800 dark:text-white px-4 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                   >
                     About
@@ -51,8 +51,8 @@ export default function Header() {
                 </li>
                 <li>
                   <div className="flex text-2xl hover:cursor-pointer text-secondary_text hover:scale-110 duration-75 ease-in items-center">
-                    <img src={"/logo123.svg"} alt="section-image"
-                           className=" w-20 dark:bg-transparent  px-2.5 py-1 mx-2 bg-secondary_text dark:border-gray-400"/>
+                    <Link href={'/'}><img src={"/logo123.svg"} alt="section-image"
+                           className=" w-20 dark:bg-transparent  px-2.5 py-1 mx-2 bg-secondary_text dark:border-gray-400"/></Link>
                     {/*LOGO*/}
                     {/*RUN&EAT*/}
                   </div>

@@ -25,10 +25,10 @@ const icons = [
 const Customers: React.FC = () => {
   const containerRef = useRef(null);
   return (
-      <div className="w-[80%] mx-auto py-12 px-10 bg-background min-h-full flex justify-center items-center">
+      <div className="container mx-auto bg-background min-h-[70vh] flex px-32 justify-center items-center">
         <div className="w-full">
-          <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row w-full">
+          <div className="flex flex-col md:flex-row items-center justify-between w-full mx-auto">
+            <div className="flex flex-col md:flex-row w-full ">
               <h2 className="text-xl  sm:text-2xl md:text-3xl lg:text-4xl font-light mb-6 md:mb-0 text-black dark:text-white text-center md:text-left md:w-1/3">
                 RUN & EAT — this is not just a slogan, but a philosophy that combines sports and gastronomy in one
                 exciting event.

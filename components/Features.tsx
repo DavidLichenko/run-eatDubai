@@ -9,16 +9,20 @@ const Features = () => {
   const features = [
     {
       title: "ABOUT THE RACE",
+      link:"about"
     },
     {
       title: "CORPORATE TEAM",
+      link:"corporate_team"
     },
     {
 
       title: "BECOME A PARTNER",
+      link:"become_partner"
     },
     {
       title: "BECOME A VOLUNTEER",
+      link:"volunteer"
     },
   ];
 
