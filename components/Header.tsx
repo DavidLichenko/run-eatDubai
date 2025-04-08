@@ -26,11 +26,11 @@ function MenuIcon(props) {
 export default function Header() {
   return (
       <header className="bg-gray-100 dark:bg-gray-950 bg-background sticky top-0 shadow-sm border-b z-10 border-gray-200 dark:border-gray-800">
-        <div className="container mx-auto px-4 py-1 flex justify-between items-center">
+        <div className="container mx-auto px-36 py-1 flex justify-between items-center">
 
           <nav className="flex items-center w-full justify-between">
 
-            <ul className="flex mx-auto w-full items-center justify-start ml-6 sm:ml-24 space-x-2 mr-2">
+            <ul className="flex mx-auto w-full items-center justify-end ml-6 sm:ml-24 space-x-2 mr-2">
 
               <li>
                 <motion.div
