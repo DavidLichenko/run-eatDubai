@@ -78,12 +78,12 @@ export default function Page() {
 
                     >
 
-                        <h2 className="text-3xl ml-8 md:ml-0 md:text-end">
-                            RUN & EAT is exactly how the idea ofthe race can be described, as the real gastronomic
+                        <h2 className="text-3xl text-blue-950 ml-8 md:ml-0 md:text-center">
+                            RUN & EAT is exactly how the idea of the race can be described, as the real gastronomic
                             pit stops await the runners
-                            along the route, where participants will enjoy delicious of local cuisine. Eachpit stop
+                            along the route, where participants will enjoy delicious of local cuisine. Each pit stop
                             will become a true culinary oasis, offering a variety of flavors from
-                            the heart of Arabian gastronomy. That's why our race is called THE MOSTDELICIOUS RACE.
+                            the heart of Arabian gastronomy. That's why our race is called <br/> THE MOST DELICIOUS RACE.
                         </h2>
                     </motion.div>
                 </>

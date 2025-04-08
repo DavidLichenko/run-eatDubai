@@ -35,10 +35,10 @@ import ReactLenis from "lenis/dist/lenis-react";
 //Cardo
 //Antic
 
-const roboto = Oswald({
-    subsets:["latin"],
-    weight: ["400","700"],
-    variable: '--font-roboto'
+const oswald = Oswald({
+    subsets: ["latin"],
+    weight: [ "400" ,"700"],
+    variable: '--font-oswald'
 })
 // const roboto = localFont({
 //     src: "fonts/dinpro.otf",
@@ -56,7 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <head>
             <link rel="icon" href="/logo.svg" type="image/png" />
         </head>
-        <body className={`${roboto.variable}  overflow-x-hidden font-sans bg-background text-foreground min-h-screen`} suppressHydrationWarning>
+        <body className={`${oswald.variable}  overflow-x-hidden font-sans bg-background text-foreground min-h-screen`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <ReactLenis root>
             {children}

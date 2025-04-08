@@ -20,7 +20,7 @@ export default function Hero() {
                             <div className={'flex gap-4  items-start'}>
                                 <img className={'-right-6 relative -top-3 hidden md:block'} src="logo2.png" alt="logo"
                                      width="90" height="80"/>
-                                <h3 className="container text-xl pl-4 leading-6 text-left border-l-2 border-cyan-700 uppercase text-secondary_text">Gastronomic <br/> Race
+                                <h3 className="container text-xl ml-4 pl-4 leading-6 text-left border-l-2 border-cyan-700 uppercase text-secondary_text">Gastronomic <br/> Race
                                 </h3>
                             </div>
                             <div className={'flex gap-4'}>
