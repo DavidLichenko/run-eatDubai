@@ -37,14 +37,13 @@ const Footer = () => {
             <div className="flex w-full hover:cursor-pointer">
               <div className={'flex gap-4 text-2xl'}>
                 <AiOutlineInstagram className={'bg-gray-900 rounded-full w-12 h-12 text-white p-1.5 hover:scale-110 hover:bg-gray-800 duration-150 ease-in'} />
-                <AiOutlineFacebook className={'bg-gray-900 rounded-full w-12 h-12 text-white p-1.5 hover:scale-110 hover:bg-gray-800 duration-150 ease-in'}/>
-
+                <AiOutlineFacebook className={'bg-gray-900 rounded-full w-12 h-12 text-white p-1.5 hover:scale-110 hover:bg-gray-800 duration-150 ease-in'} />
               </div>
             </div>
           </div>
         </div>
-        <div className="container border-t-2 pt-7 border-border  mx-auto px-4 flex flex-wrap justify-center sm:justify-between items-center text-sm">
-          <p className="ml-4">&copy; {currentYear} Run&Eat Dubai. All rights reserved.</p>
+        <div className="border-t-2 pt-7 border-border  mx-auto px-4 flex flex-wrap justify-center sm:justify-between items-center text-sm">
+          <p className="ml-4">&copy; {currentYear} RUN & EAT Dubai. All rights reserved.</p>
           <div className="flex gap-4 mr-12 items-center">
             <Link href="/about" className={'hover:text-foreground duration-150 ease-in'}>About the Race</Link>
             <Link href="/corporate_team" className={'hover:text-foreground duration-150 ease-in'}>Corporate Team</Link>
