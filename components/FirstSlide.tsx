@@ -6,10 +6,9 @@ import {AiOutlineInstagram, AiOutlineWhatsApp} from "react-icons/ai";
 const FirstSlide = () => {
     return (
         <>
-
             <div className="relative z-20 bg-foreground">
                 <section
-                    className="flex flex-col items-center w-full  mx-auto pt-20 pb-20 md:pb-0 md:pt-24 md:justify-start h-full mb-24 bg-background z-10 text-center ">
+                    className="flex flex-col items-start justify-start w-full  mx-auto pb-20 md:pb-0 md:pt-12 md:justify-start h-full mb-24 bg-background z-10 text-center ">
                     <div
                         className={' mx-auto flex md:items-start w-full'}
                     >
