@@ -10,17 +10,35 @@ const Page = () => {
         <>
             <Header/>
             <FirstSlide/>
-            <div className="mx-auto h-screen container flex justify-center items-start">
+            <div className="mx-auto h-full container flex justify-center items-start">
+
+
                 <motion.div initial={{y: 30, opacity: 0}} whileInView={{y: 0, opacity: 1}}
                             transition={{duration: 0.2, delay: 0.1, ease: "easeOut"}}>
-                    <h2 className="text-2xl md:text-5xl font-bold mt-12 uppercase text-center ">CORPORATE TEAM</h2>
-                </motion.div>
+                    <div className="py-4 h-full ">
+                        <img src="/corporate/Part1-1.png" alt=""/>
+                    </div>
+                    <motion.div initial={{y: 30, opacity: 0}} whileInView={{y: 0, opacity: 1}}
+                                transition={{duration: 0.2, delay: 0.1, ease: "easeOut"}}>
+                        <div className={'text-3xl px-20 '}>
+                            For registration of corporate teams,please contact Diana Menibaeva
+                            <br/>
+                            <br/>
+                            <span className={'text-blue-500 underline'} >diana@runeatdubai.com</span>
+                        </div>
+
+                    </motion.div>
+
+                        <div className="py-4 h-full ">
+                            <img src="/corporate/Part2-1.png" alt=""/>
+                        </div>
+                    </motion.div>
 
             </div>
 
             <Footer/>
         </>
-    );
+);
 };
 
 export default Page;
