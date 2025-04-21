@@ -654,7 +654,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                 </div>
             </div>
             <div
-                className={'min-h-full md:pt-12 md:pb-32 flex flex-col gap-6 items-center justify-start md:mx-auto md:mt-32 md:w-1/2 pb-12 mx-12'}>
+                className={'min-h-full md:pt-12 md:pb-32 flex flex-col gap-6 items-center justify-start md:mx-auto md:mt-20 md:w-1/2 pb-12 mx-12'}>
 
                 <motion.div initial={{y: 30, opacity: 0}}
                             whileInView={{y: 0, opacity: 1, transition: {duration: 0.4, delay: .1}}}

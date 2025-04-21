@@ -85,7 +85,7 @@ export default function Hero() {
 
                         {/*</motion.div>*/}
                     </h1>
-                    <h2 className="text-5xl font-light w-full md:w-2/4 text-secondary_text mt-12">
+                    <h2 className="text-5xl font-light uppercase w-full md:w-2/4 text-secondary_text mt-32">
                         <motion.div initial={{opacity: 0, y: 30}} whileInView={{y: 0, opacity: 1}}
                                     transition={{duration: 0.3, delay: 0.1, ease: "easeIn"}}
                                     className={'text-left ml-12 md:ml-0 md:text-center'}>
