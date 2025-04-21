@@ -26,7 +26,7 @@ import "styles/globals.css";
 //     variable: '--font-dinpro'
 // });
 
-import {Oswald} from "next/font/google"
+import { Oswald } from "next/font/google"
 import ReactLenis from "lenis/dist/lenis-react";
 //Oswald
 //Caveaut
@@ -38,7 +38,9 @@ import ReactLenis from "lenis/dist/lenis-react";
 const oswald = Oswald({
     subsets: ["latin"],
     weight: [ "400" ,"700"],
-    variable: '--font-oswald'
+    variable: '--font-font',
+    display: 'swap',
+    adjustFontFallback: false
 })
 // const roboto = localFont({
 //     src: "fonts/dinpro.otf",

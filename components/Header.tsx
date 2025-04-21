@@ -26,7 +26,7 @@ function MenuIcon(props) {
 export default function Header() {
   return (
       <header className="bg-gray-100 dark:bg-gray-950 bg-background sticky top-0 shadow-sm border-b z-10 border-gray-200 dark:border-gray-800">
-        <div className="container mx-auto px-36 py-1 flex justify-between items-center">
+        <div className="container mx-auto px-24 py-1 flex justify-between items-center">
 
           <nav className="flex items-center w-full justify-between">
 
