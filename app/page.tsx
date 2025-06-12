@@ -53,18 +53,7 @@ export default function Page() {
             <div className=" w-full fixed z-[9990] top-0">
                 <Header/>
             </div>
-
-            {/*<motion.div*/}
-            {/*    initial={{opacity: 0}}*/}
-            {/*    whileInView={{opacity: 1}}*/}
-            {/*    transition={{duration: 0.2, delay: 0.2, ease: "easeOut"}}*/}
-
-            {/*>*/}
-            {/*    <div ref={containerRef} className={''}>*/}
-            {/*<motion.img src={'/elements/7.png'} drag dragElastic={0.65} className="w-36 absolute" dragConstraints={containerRef}/>*/}
             <Hero/>
-            {/*</div>*/}
-            {/*</motion.div>*/}
             <Section leftHalf={
                 <Features/>
             } rightHalf={
@@ -78,7 +67,7 @@ export default function Page() {
 
                     >
 
-                        <h2 className="text-3xl text-blue-950 ml-8 md:ml-0 md:text-center">
+                        <h2 className="text-3xl ml-8 md:ml-0 md:text-center">
                             RUN & EAT is exactly how the idea of the race can be described, as the real gastronomic
                             pit stops await the runners
                             along the route, where participants will enjoy delicious of local cuisine. Each pit stop
@@ -294,7 +283,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                                     <motion.path initial={{pathLength: 0}} whileInView={{pathLength: 1}}
                                                  transition={{duration: 0.5, delay: 0.2, ease: 'easeInOut'}}
                                                  d="M3 0V11M3 22V11M3 11H203V0V22" stroke="#F2D118"
-                                                 stroke-width="6"/>
+                                                 strokeWidth="6"/>
                                 </svg>
                             </div>
                             <div className={'flex flex-col gap-3 justify-center items-start'}>
@@ -308,7 +297,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                                                  whileInView={{pathLength: 1}}
                                                  transition={{duration: 0.5, delay: 0.3, ease: 'easeInOut'}}
                                                  d="M3 0V10.5M3 21V10.5M3 10.5H403V0V21"
-                                                 stroke="#F2D118" stroke-width="6"/>
+                                                 stroke="#F2D118" strokeWidth="6"/>
                                 </svg>
 
 
@@ -334,7 +323,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                                     <motion.path initial={{pathLength: 0}} whileInView={{pathLength: 1}}
                                                  transition={{duration: 0.5, delay: 0.2, ease: 'easeInOut'}}
                                                  d="M3 0V11M3 22V11M3 11H203V0V22" stroke="#F2D118"
-                                                 stroke-width="6"/>
+                                                 strokeWidth="6"/>
                                 </svg>
                             </div>
                             <div className={'flex flex-col gap-3 justify-center items-start'}>
@@ -348,7 +337,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                                                  whileInView={{pathLength: 1}}
                                                  transition={{duration: 0.5, delay: 0.3, ease: 'easeInOut'}}
                                                  d="M3 0V10.5M3 21V10.5M3 10.5H403V0V21"
-                                                 stroke="#F2D118" stroke-width="6"/>
+                                                 stroke="#F2D118" strokeWidth="6"/>
                                 </svg>
 
 
@@ -394,7 +383,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                             <motion.path initial={{pathLength: 0}} whileInView={{pathLength: 1}}
                                          transition={{duration: 0.5, delay: 0.2, ease: 'easeInOut'}}
                                          d="M3 0V11M3 22V11M3 11H203V0V22" stroke="#F2D118"
-                                         stroke-width="6"/>
+                                         strokeWidth="6"/>
                         </svg>
                     </div>
                     <div className={'flex flex-col gap-3 justify-center items-start'}>
@@ -408,7 +397,7 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
                                          whileInView={{pathLength: 1}}
                                          transition={{duration: 0.5, delay: 0.3, ease: 'easeInOut'}}
                                          d="M3 0V10.5M3 21V10.5M3 10.5H403V0V21"
-                                         stroke="#F2D118" stroke-width="6"/>
+                                         stroke="#F2D118" strokeWidth="6"/>
                         </svg>
 
 
