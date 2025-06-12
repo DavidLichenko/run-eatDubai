@@ -13,7 +13,7 @@ export default function Hero() {
 
             <div className="relative z-20 bg-foreground">
                 <section
-                    className="flex flex-col items-center w-full  mx-auto pt-20 pb-20 md:pb-0 md:pt-24 md:justify-start h-full md:h-screen bg-background z-10 text-center ">
+                    className="flex flex-col items-center w-full  mx-auto pt-20 pb-20  md:py-20 md:justify-start h-full md:h-full bg-background z-10 text-center ">
                     <div
                         className={' mx-auto flex md:items-start w-full'}
                     >
