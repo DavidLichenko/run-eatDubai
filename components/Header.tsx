@@ -149,7 +149,7 @@ export default function Header() {
                         transition={{duration: 0.2, ease: "backInOut"}}
 
                     >
-                      <Link href={'#'}><AiOutlineInstagram className={'w-8 h-8'}/></Link>
+                      <Link href={'https://www.instagram.com/run.eat.dubai/'} prefetch={false}><AiOutlineInstagram className={'w-8 h-8'}/></Link>
                     </motion.div>
                     <motion.div
                         initial={{opacity: 0, y: 30}}

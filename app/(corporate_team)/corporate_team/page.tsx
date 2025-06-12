@@ -21,7 +21,7 @@ const Page = () => {
                     <motion.div initial={{y: 30, opacity: 0}} whileInView={{y: 0, opacity: 1}}
                                 transition={{duration: 0.2, delay: 0.1, ease: "easeOut"}}>
                         <div className={'text-3xl px-20 '}>
-                            For registration of corporate teams,please contact Diana Menibaeva
+                            For registration of corporate teams, please contact Diana Menibaeva
                             <br/>
                             <br/>
                             <span className={'text-blue-500 underline'} >diana@runeatdubai.com</span>

@@ -647,12 +647,14 @@ c-9 93 -38 205 -68 265 -55 106 -157 164 -234 133z"/>
 
                 <motion.div initial={{y: 30, opacity: 0}}
                             whileInView={{y: 0, opacity: 1, transition: {duration: 0.4, delay: .1}}}
-                            className="text-center text-3xl font-bold">
-                    Join our race with friends, family or run with a corporate team.
+                            className="text-center text-3xl font-bold flex flex-col items-center justify-center">
+                    <span>Join our race with friends, family or run </span>
+
+                    <span>with a corporate team.</span>
                 </motion.div>
                 <motion.div initial={{y: 30, opacity: 0}}
                             whileInView={{y: 0, opacity: 1, transition: {duration: 0.7, delay: .2}}}
-                            className="text-center text-5xl font-bold">
+                            className="text-center text-secondary_text text-5xl font-bold">
                     OUR RACE MAKES YOU FALL IN LOVE WITH RUNNING
                 </motion.div>
                 {/*<motion.button initial={{y: 30, opacity: 0}}*/}

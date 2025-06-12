@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link";
+import Image from "next/image";
 import {motion, useScroll, useSpring, useTransform} from "framer-motion"
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -34,7 +35,7 @@ export default function Hero() {
                                     transition={{duration: 0.2, ease: "backInOut"}}
 
                                 >
-                                    <Link href={'#'}><AiOutlineInstagram className={'w-7 h-7'}/></Link>
+                                    <a target="_blank"  href={'https://www.instagram.com/run.eat.dubai/'}><AiOutlineInstagram className={'w-7 h-7'}/></a>
                                 </motion.div>
                                 <motion.div
                                     initial={{opacity: 0, x: 30}}
@@ -88,8 +89,25 @@ export default function Hero() {
                     <h2 className="text-5xl font-light uppercase w-full md:w-2/4 text-secondary_text mt-32">
                         <motion.div initial={{opacity: 0, y: 30}} whileInView={{y: 0, opacity: 1}}
                                     transition={{duration: 0.3, delay: 0.1, ease: "easeIn"}}
-                                    className={'text-left ml-12 md:ml-0 md:text-center'}>
-                            The first gastronomic race RUN & EATDubai will be held already this fall
+                                    className={'text-left ml-12 md:ml-0 md:text-center inline-flex'}>
+
+                                <p className="text-4xl font-light">
+        <span className="flex flex-col gap-2 items-center relative align-middle">
+              <div>The first gastronomic race</div>
+          <Image
+              src="/Logo_Text.png"
+              alt="RUN & EAT Dubai"
+              width={300}
+              height={90}
+              className="inline-block"
+          />
+             <div> will be held already this fall</div>
+        </span>{" "}
+                                </p>
+
+
+
+
                         </motion.div>
                         {/*<motion.div initial={{opacity: 0.3, x: -30}} animate={{x: 0, opacity: 1}}*/}
                         {/*            transition={{duration: 0.4, delay: 0.1, ease: "circIn"}}*/}
