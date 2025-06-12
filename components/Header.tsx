@@ -92,9 +92,9 @@ export default function Header() {
               </li>
             </ul>
 
-            <div className="mr-6">
-              <ThemeSwitch/>
-            </div>
+            {/*<div className="mr-6">*/}
+            {/*  <ThemeSwitch/>*/}
+            {/*</div>*/}
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full  sm:hidden">
