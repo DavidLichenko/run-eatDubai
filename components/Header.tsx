@@ -56,9 +56,9 @@ export default function Header() {
         animate={!isMenuOpen ? {opacity: 1, y: 0} : {y:-30}}
         exit={isMenuOpen && {y: -15}}
         transition={{duration: 0.2}}
-        className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-gray-200 dark:border-gray-700"
+        className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white border-b border-gray-200 dark:border-gray-700"
         style={{
-          backgroundColor: scrollY.get() > 100 ? backgroundColor : "transparent"
+          backgroundColor: scrollY.get() > 100 ? backgroundColor : "white"
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,7 +78,8 @@ export default function Header() {
                   transition={{duration: 0.2}}
                 >
                   <div className="flex items-center gap-4 mb-0">
-                  <img className="w-16 h-16 md:w-20 md:h-20" src="logo2.png" alt="logo"/>
+                    <Image src="/logo2.png" className={'w-16 h-16 md:h-20 md:w-20'} alt="logo" height={80} width={80}/>
+                  {/*<img className="w-16 h-16 md:w-20 md:h-20" src="logo2.png" alt="logo"/>*/}
                             <div className="border-l-4 border-green-600 pl-4">
                                 <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white uppercase tracking-wide">
                                     Gastronomic Race
