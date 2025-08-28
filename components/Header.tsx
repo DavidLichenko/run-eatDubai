@@ -188,10 +188,10 @@ export default function Header() {
                 </SheetClose>
                   <div className="flex flex-col h-full w-full">
                     {/* Mobile Menu Header */}
-                    <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+                    <div className="flex items-center justify-between px-6 pb-4 border-b border-gray-200 dark:border-gray-700">
                       <div className="flex items-center space-x-3">
                       <div className="flex items-center gap-4 mb-0 md:mb-6 mt-2">
-                  <img className="w-16 h-16 md:w-20 md:h-20" src="logo2.png" alt="logo"/>
+                        <Image src="/logo2.png" className={'w-16 h-16 md:h-20 md:w-20'} alt="logo" height={80} width={80}/>
                             <div className="border-l-4 border-green-600 pl-4">
                                 <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white uppercase tracking-wide">
                                     Gastronomic Race
